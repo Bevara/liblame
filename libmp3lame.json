@@ -1,0 +1,14 @@
+{
+    "name": "libmp3lame",
+    "description": "MP3 audio encoder (native libmp3lame)",
+    "filters":["enclame"],
+    "help": "This filter encodes a raw S16 PCM audio PID to MPEG-1 Layer III (MP3) by calling libmp3lame's native API directly.",
+    "support": [
+        "audio"
+    ],
+    "sources":"https://bevara.ddns.net/sources/libmp3lame.accessor",
+    "filter_source":{
+        "enclame" : "enc_lame.c"
+    },
+    "licence_required":true
+}
