@@ -1,4 +1,4 @@
-# libmidi
+# liblame
 This filter encode to mp3 using liblame.
 
 ## Requirements
