@@ -236,7 +236,7 @@ GF_FilterRegister LameEncRegister = {
 	.finalize = lameenc_finalize,
 };
 
-const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE dynCall_enclame_register(GF_FilterSession *session)
+const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE enclame_register(GF_FilterSession *session)
 {
 	return &LameEncRegister;
 }
@@ -244,5 +244,5 @@ const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE dynCall_enclame_register(GF_Filte
 #include "filter_register.h"
 __attribute__((constructor))
 void register_enclame(void) {
-    gf_filter_auto_register("enclame", dynCall_enclame_register);
+    gf_filter_auto_register("enclame", enclame_register);
 }
