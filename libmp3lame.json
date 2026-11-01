@@ -11,5 +11,5 @@
         "enclame" : "enc_lame.c"
     },
     "licence_required":true,
-    "using": ["mm_solver_1.0.1"]
+    "using": ["mm_solver_1.0.1", "mm_solver_1.0.2"]
 }
